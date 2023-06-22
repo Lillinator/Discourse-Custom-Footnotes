@@ -1,0 +1,8 @@
+{
+  "name": "Discourse custom footnotes",
+  "component": true,
+  "about_url": "https://github.com/Lillinator/discourse-custom-footnotes/about.json",
+  "license_url": "https://github.com/Lillinator/discourse-custom-footnotes/blob/main/LICENSE",
+  "authors": "@Lillinator",
+  "theme_version": "1.0"
+}
