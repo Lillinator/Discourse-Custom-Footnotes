@@ -1,0 +1,46 @@
+// * Footnote Numbering *
+
+// * Footnote number formatting *
+
+@if $use_numbered_footnotes == "true" {
+  .cooked.inline-footnotes {
+    counter-reset: foot-note;
+  }
+  .inline-footnotes a.expand-footnote:before {
+     counter-increment: foot-note;
+     content: counter(foot-note);
+  }
+  .inline-footnotes a.expand-footnote svg {
+   display: none;
+  }
+}
+
+.inline-footnotes a.expand-footnote {
+  text-decoration: none !important;
+  font-size: #{$footnote_number_size}px;
+  color: $footnote_number_font_color;
+  vertical-align: $footnote_vertical_alignment;
+  min-height: unset;
+  border: #{$footnote_number_border_size}px solid $footnote_border_color;
+  padding: 0 0.4em;
+  background-color: $footnote_number_background_color;
+}
+
+// * Footnote expanded text formatting *
+
+#footnote-tooltip {
+  color: $footnote_box_font_color;
+  font-size:  #{$footnote_box_font_size}px;
+  border:  #{$footnote_box_border_size}px solid $footnote_border_color;
+  background-color: $footnote_box_background_color;
+}
+
+#footnote-tooltip #arrow:before {
+  border-top: #{$footnote_box_border_size}px solid $footnote_border_color;
+  border-left: #{$footnote_box_border_size}px solid $footnote_border_color;
+  background-color: $footnote_box_background_color;
+}
+
+#footnote-tooltip[data-popper-placement^=bottom]>#arrow {
+  top: -6px !important;
+}
