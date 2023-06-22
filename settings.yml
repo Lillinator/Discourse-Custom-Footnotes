@@ -1,0 +1,94 @@
+use_numbered_footnotes:
+  type: bool
+  default: false
+  description:
+    en: "Use numbered footnotes."
+
+footnote_vertical_alignment:
+  type: enum
+  default: "sub"
+  choices:
+    - sub
+    - super
+  description: 
+    en: "Footnote placement - subscript or superscript"
+
+footnote_number_background_color:
+  type: string
+  default: ""
+  description: 
+    en: "Background color of the footnote numbers or ellipses if not using numbering. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default."
+
+footnote_box_background_color:
+  type: string
+  default: ""
+  description: 
+    en: "Background color of the pop-up footnote box. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default. "
+
+footnote_border_color:
+  type: string
+  default: ""
+  description: 
+    en: "Border color of the footnotes and footnote box. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default."
+
+footnote_number_border_size:
+  type: enum
+  default: ""
+  choices:
+    - 0
+    - 0.5
+    - 1
+    - 1.5
+    - 2
+  description:
+    en: "Size in pixels of the footnote number or ellipses border in pixels. Leave blank for the default."
+
+footnote_box_border_size:
+  type: enum
+  default: ""
+  choices:
+    - 0
+    - 0.5
+    - 1
+    - 1.5
+    - 2
+  description:
+    en: "Size in pixels of the footnote box border in pixels. Leave blank for the default."
+
+footnote_number_size:
+  type: enum
+  default: ""
+  choices:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+  description:
+    en: "Footnote number sizing in pixels if using numbered footnotes. Leave blank for the default footnote font size."
+
+footnote_number_font_color:
+  type: string
+  default: ""
+  description: 
+    en: "Text color of the footnote numbers or the ellipses. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default."
+
+footnote_box_font_size:
+  type: enum
+  default: ""
+  choices:
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+  description: 
+    en: "Footnote box text sizing in pixels. Leave blank for the default footnote text size."
+
+footnote_box_font_color:
+  type: string
+  default: ""
+  description: 
+    en: "Color of the footnote box text. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default."
