@@ -21,7 +21,7 @@
   color: $footnote_number_font_color;
   vertical-align: $footnote_vertical_alignment;
   min-height: unset;
-  border: #{$footnote_number_border_size}px solid $footnote_border_color;
+  border: #{$footnote_number_border_size}px solid $footnote_number_border_color;
   padding: 0 0.4em;
   background-color: $footnote_number_background_color;
 }
@@ -31,13 +31,13 @@
 #footnote-tooltip {
   color: $footnote_box_font_color;
   font-size:  #{$footnote_box_font_size}px;
-  border:  #{$footnote_box_border_size}px solid $footnote_border_color;
+  border:  #{$footnote_box_border_size}px solid $footnote_box_border_color;
   background-color: $footnote_box_background_color;
 }
 
 #footnote-tooltip #arrow:before {
-  border-top: #{$footnote_box_border_size}px solid $footnote_border_color;
-  border-left: #{$footnote_box_border_size}px solid $footnote_border_color;
+  border-top: #{$footnote_box_border_size}px solid $footnote_box_border_color;
+  border-left: #{$footnote_box_border_size}px solid $footnote_box_border_color;
   background-color: $footnote_box_background_color;
 }
 
