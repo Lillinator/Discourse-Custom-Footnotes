@@ -25,11 +25,17 @@ footnote_box_background_color:
   description: 
     en: "Background color of the pop-up footnote box. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default. "
 
-footnote_border_color:
+footnote_number_border_color:
   type: string
   default: ""
   description: 
-    en: "Border color of the footnotes and footnote box. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default."
+    en: "Border color of the footnote numbers or ellipses. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default."
+
+footnote_box_border_color:
+  type: string
+  default: ""
+  description: 
+    en: "Border color of the footnote box. Use CCS Color names, hexadecimal color codes, or theme color variables. Leave blank for default."
 
 footnote_number_border_size:
   type: enum
